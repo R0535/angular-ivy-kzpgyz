@@ -10,9 +10,14 @@ export class AppComponent {
   productName = "";
   btnSave = "Guardar";
 
+  clickProduct(id: number) {
+    console.log("product");
+    console.log(id);
+  }
+
   products: Product[] = [
     {
-      id: "1",
+      id: 1,
       image: "https://i.imgur.com/68y9zus.jpg",
       title: "Chocolate Tradicional",
       price: 320,
@@ -20,7 +25,7 @@ export class AppComponent {
         "Chocolate espumoso compuesto por un 75% de cacao natural. Elaborado de manera artesanal en las zonas fertiles de Chiapas"
     },
     {
-      id: "2",
+      id: 2,
       image: "https://i.imgur.com/1zDEDSs.png",
       title: "Chocolate Especial",
       price: 350,
@@ -28,7 +33,7 @@ export class AppComponent {
         "Este chocolate, ademas ser 75% cacao, tiene adicionado almendras y un toque espeso. Elaborado de manera artesanal en las zonas fertiles de Chiapas"
     },
     {
-      id: "3",
+      id: 3,
       image: "https://i.imgur.com/QJDhm4k.jpg",
       title: "Precios de los chocolates",
       price: 350,

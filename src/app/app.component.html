@@ -1,7 +1,6 @@
 <H1>Nuevo producto</H1>
 <input  type="text">
-<button [innerText]="btnSave">
-
+<button [innerText]="btnSave"></button>
 <div *ngFor='let product of products'>
-  <app-product [product]="product"></app-product>
+	<app-product (productClicked)="clickProduct(product.id)" [product]="product"></app-product>
 </div>
