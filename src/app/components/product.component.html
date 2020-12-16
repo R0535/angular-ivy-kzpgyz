@@ -3,4 +3,7 @@
 	<img style="max-width:320px" [src]='product.image'>
 	<p style="width:320px; text-align:center">{{product.description}}</p>
 	<strong style="text-align:left">${{product.price}}</strong>
+	<label>Cantidad:</label>
+	<input type="text">
+	<button (click)="addCart()">Agregar al carrito</button>
 </div>
